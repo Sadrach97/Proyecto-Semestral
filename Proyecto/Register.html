@@ -6,50 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: #0B4E9E;
+        }
+    </style>
+
 </head>
 <body>
-    <h1>Registro</h1>
+    <br>
+    <br>
+    <br>
     <div class="container">
-        <h1>Ingreso de datos</h1>
-        <form>
-            <div class="form-group row">
-                <label for="nombre">Primer Nombre</label>
-                <input type="text" class="form-control" id="nombre">
-           
-            
-                <label for="snombre">Segundo Nombre</label>
-                <input type="text" class="form-control" id="snombre">
-            </div>
-            <div class="form-group">
-                <label for="appate">Apellido Paterno</label>
-                <input type="text" class="form-control" id="appate">
-            </div>
-            <div class="form-group">
-                <label for="apmate">Apellido Materno</label>
-                <input type="text" class="form-control" id="apmate">
-            </div>
-            <div class="form-group">
-                <label for="Telefono">Telefono</label>
-                <input type="number" class="form-control" id="Telefono">
-            </div>
-            <div class="form-group">
-                <label for="Contraseña">Contraseña</label>
-                <input type="text" class="form-control" id="Contraseña">
-            </div>
-            <div class="form-group">
-                <label for="sContraseña">Confirmar Contraseña</label>
-                <input type="text" class="form-control" id="sContraseña">
-            </div>
-            <div class="form-group">
-                <label for="Correo">Correo Electronico</label>
-                <input type="text" class="form-control" id="Correo">
-            </div>
-            <div class="form-group">
-                <label for="Dirrec">Direccion</label>
-                <input type="text" class="form-control" id="Dirrec">
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+        <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+        <h2 class="fst-italic" style="color: aliceblue;">Registro</h2>
+    </div>
 
+</div>
+        <form>
+            <div class="form-group row ">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-12"><br></div>
+                        <div class="col-12"><br></div>
+                        <div class="col-12"> <br></div>
+                        <dic class="col-12"><br> </dic>
+                        <dic class="col-12"> <br></dic>
+                        <dic class="col-12"> <br></dic>
+                        <dic class="col-12"><p class="display-1 fst-italic" style="color: aliceblue;">Stylish Foot</p></dic>
+                    </div>
+                </div>
+                <div class="col-md-6" style="color: #23DAC1;">
+                
+                <div class="row">
+                    <div class="col-md-6">
+                <label for="nombre">Primer Nombre</label>
+                <input type="text" class="form-control rounded" id="nombre"  required>
+            </div>
+                <div class="col-md-6">
+                <label for="snombre">Segundo Nombre</label>
+                <input type="text" class="form-control"  id="snombre"required>
+            </div>
+            <div class="col-md-6">
+                <label for="appate">Apellido Paterno</label>
+                <input type="text" class="form-control" id="appate"required>
+            </div>
+                <div class="col-md-6">
+                <label for="apmate">Apellido Materno</label>
+                <input type="text" class="form-control" id="apmate"required>
+            </div>
+                <div class="col-md-6">
+                <label for="Telefono">Telefono</label>
+                <input type="number" class="form-control" placeholder=" Ej : (+56912345678)" id="Telefono"required>
+            </div>
+            <DIV class="col-md-6"></DIV>
+                <div class="col-md-6">
+                <label for="Contraseña">Contraseña</label>
+                <input type="text" class="form-control" id="Contraseña"required>
+            </div>
+            <div class="col-md-6">
+                <label for="sContraseña">Confirmar Contraseña</label>
+                <input type="text" class="form-control"  id="sContraseña"required>
+            </div>
+            <div class="col-md-12">
+                <label for="Correo">Correo Electronico</label>
+                <input type="text" class="form-control" placeholder="Ej: (stylishfoot@gmail.com)" id="Correo"required>
+            </div>
+            <div class="col-md-12">
+                <label for="Dirrec">Direccion</label>
+                <input type="text" class="form-control"  placeholder="Ej: (Avenida Manuel Rodriguez 45, Santiago)" id="Dirrec"required>
+            <br>
+            </div>
+            </div>        
+            </div>
+
+            <br>
+            <div class="container">
+                <div class="row">
+                <div class="col-6"></div>
+                <div class="col-2"></div>
+                <div class="col-4">
+            <button type="submit" class="btn " style="color: aliceblue;">Aceptar</button>
+                </div>
         </form>
 
 
