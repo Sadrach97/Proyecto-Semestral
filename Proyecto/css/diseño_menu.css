@@ -10,3 +10,12 @@ body {
   font-family: sans-serif;
   height: 100%;
 }
+.login-box input[type="text"] {
+  border: none;
+    border-bottom: 1px solid blue;
+    background: black;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
