@@ -63,7 +63,6 @@ body {
   font-family: sans-serif;
   height: 100%;
 }
-
 .centrado{
   margin-left: 200px;
   width: 20%;
@@ -165,4 +164,13 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: content-box;
+}
+.login-box input[type="text"]{
+  border: none;
+    border-bottom: 1px solid blue;
+    background: black;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
 }

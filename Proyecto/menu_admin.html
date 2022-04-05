@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <script>
+      var inicio = 0; //se inicializa una variable en 0
+
+  function aumentar(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id aumentar
+
+var cantidad = document.getElementById('cantidad').value = ++inicio; //se obtiene el valor del input, y se increment  a en 1 el valor que tenga.
+}
+
+function disminuir(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id disminuir
+
+var cantidad = document.getElementById('cantidad').value = --inicio; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
+}
+
+    
+    </script>
+    <style>
+      body{
+        background-image: url(Proyecto/img/fondo.jpg);
+      }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="Proyecto/css/diseño_menu.css">
+    
+  </head>
+
+<body >
+    <!--Barra de navegación-->
+    <header>
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <strong>Tienda Online</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarHeader">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">Hombre</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#" class="nav-link ">Mujer</a>
+                      </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Infantil</a>
+                        </li>
+                    </ul>
+                    <a href="carrito.php" class="btn "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16" style="color: white;">
+                      <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Contenido-->
+    <main>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="https://i.ibb.co/XCNWQHD/principal.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Zapatos color cafe</h5>
+                            <p class="card-text">CLP 21,000</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-primary">Detalles</a>
+                                </div>
+                                <a href="#" class="btn btn-success">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                          <img src="https://i.ibb.co/XCNWQHD/principal.jpg">
+                          <div class="card-body">
+                              <h5 class="card-title">Zapatos color cafe</h5>
+                              <p class="card-text">CLP 21,000</p>
+                              <p class="Stock">Cantidad Disponible: 30 </p> 
+                              <div class="login-box">
+                              <button id='aumentar' onclick="aumentar()" class="btn btn-success login-box">+</button>
+                              <button id='disminuir' onclick="disminuir()" class="btn btn-danger">-</button>
+                              <input type='text' id="cantidad" value="0">
+                            </div>
+                            <br>
+                              <div class="d-flex justify-content-between align-items-center">
+                                
+                                  <div class="btn-group"  >
+                                      <a href="#" class="btn btn-primary">Detalles</a>
+                                  </div>
+                                  <input type="button" href="#" class="btn btn-success" id="quitar" value="Agregar">
+                                  
+                              </div>
+                          </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
