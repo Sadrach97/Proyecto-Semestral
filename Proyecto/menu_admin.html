@@ -8,7 +8,12 @@
     <title>Tienda Online Admin</title>
     <script>
         var inicio = 0; //se inicializa una variable en 0
-  
+        var inicio1 = 0;
+        var inicio2 = 0;
+        var inicio3 = 0;
+        var inicio4 = 0;
+        var inicio5 = 0;
+
     function aumentar(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id aumentar
   
   var cantidad = document.getElementById('cantidad').value = ++inicio; //se obtiene el valor del input, y se increment  a en 1 el valor que tenga.
@@ -18,6 +23,55 @@
   
   var cantidad = document.getElementById('cantidad').value = --inicio; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
   }
+  function aumentar1(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id aumentar
+  
+  var cantidad = document.getElementById('cantidad1').value = ++inicio; //se obtiene el valor del input, y se increment  a en 1 el valor que tenga.
+  }
+  
+  function disminuir1(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id disminuir
+  
+  var cantidad = document.getElementById('cantidad1').value = --inicio; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
+  }
+  function aumentar2(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id aumentar
+  
+  var cantidad = document.getElementById('cantidad2').value = ++inicio2; //se obtiene el valor del input, y se increment  a en 1 el valor que tenga.
+  }
+  
+  function disminuir2(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id disminuir
+  
+  var cantidad = document.getElementById('cantidad2').value = --inicio2; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
+  }
+  function aumentar3(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id aumentar
+  
+  var cantidad = document.getElementById('cantidad3').value = ++inicio3; //se obtiene el valor del input, y se increment  a en 1 el valor que tenga.
+  }
+  
+  function disminuir3(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id disminuir
+  
+  var cantidad = document.getElementById('cantidad3').value = --inicio3; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
+  }
+  function aumentar4(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id aumentar
+  
+  var cantidad = document.getElementById('cantidad4').value = ++inicio4; //se obtiene el valor del input, y se increment  a en 1 el valor que tenga.
+  }
+  
+  function disminuir4(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id disminuir
+  
+  var cantidad = document.getElementById('cantidad4').value = --inicio4; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
+  }
+  
+  function aumentar5(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id aumentar
+  
+  var cantidad = document.getElementById('cantidad5').value = ++inicio5; //se obtiene el valor del input, y se increment  a en 1 el valor que tenga.
+  }
+  
+  function disminuir5(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id disminuir
+  
+  var cantidad = document.getElementById('cantidad5').value = --inicio5; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
+  }
+  
+  
+  
   
       
       </script>
@@ -123,57 +177,76 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card shadow-sm">
-                    <img src="img/principal-removebg-preview.png">
+                    <img src="img/Principal_mujer2.jpg" width="310">
                     <div class="card-body">
-                        <h5 class="card-title">Zapatos color cafe</h5>
+                        <h5 class="card-title">Zapatos de tacones de aguja color rojo</h5>
                         <p class="card-text">CLP 21,000</p>
-                        <p>Cantidad Disponible: 30</p>
+                        <p>Cantidad Disponible: 8</p>
                         <div class="login-box">
-                            <button id='aumentar' onclick="aumentar()" class="btn btn-success login-box">+</button>
-                            <button id='disminuir' onclick="disminuir()" class="btn btn-danger">-</button>
-                            <input type='text' id="cantidad" value="0">
-                          </div>
-                          <br>
+                            <button id='aumentar' onclick="aumentar5()" class="btn btn-success login-box">+</button>
+                            <button id='disminuir' onclick="disminuir5()" class="btn btn-danger">-</button>
+                            <input type='text' id="cantidad5" value="0">
+                        </div>
+                        <br>
                         <div class="d-flex justify-content-between align-items-center">
                             
-                            <a href="#" class="btn btn-success">Agregar</a>
+                            <a href="#" class="btn btn-success">Editar</a>
                         </div>
                     </div>
                 </div>
             </div>
             
-                    <div class="col-4">
+                
+            
+                    <div class="col-md-4">
                 
                     <div class="card shadow-sm">
-                        <img src="img/Principal_mujer.jpg" width="240">
+                        <img src="img/Principal_mujer.jpg" width="230">
                         <div class="card-body">
                             <h5 class="card-title">Zapatos Mujer</h5>
                             <p class="card-text">CLP 31,000</p>
                             <p>Cantidad Disponible: 10</p>
                             <div class="login-box">
-                                <button id='aumentar' onclick="aumentar()" class="btn btn-success login-box">+</button>
-                                <button id='disminuir' onclick="disminuir()" class="btn btn-danger">-</button>
-                                <input type='text' id="cantidad" value="0">
+                                <button id='aumentar' onclick="aumentar1()" class="btn btn-success login-box">+</button>
+                                <button id='disminuir' onclick="disminuir1()" class="btn btn-danger">-</button>
+                                <input type='text' id="cantidad1" value="0">
                               </div>
                               <br>
                             <div class="d-flex justify-content-between align-items-center">
-                                
-                                <a href="#" class="btn btn-success">Agregar</a>
+                                <a href="#" class="btn btn-success">Editar</a>
                                 </div>
                             </div>
                         </div>
                     </div>  
                 
             
-        
-    
-   
                 <div class="col-md-4">
                     <div class="card shadow-sm">
-                        <img src="img/Principal_hombre2.jpg" width="240">
+                        <img src="img/Principal_hombre2.jpg" width="230">
                         <div class="card-body">
                             <h5 class="card-title">Zapatos Deportivos para Hombre</h5>
                             <p class="card-text">CLP 25,000</p>
+                            <p>Cantidad Disponible: 30</p>
+                            <div class="login-box">
+                                <button id='aumentar' onclick="aumentar2()" class="btn btn-success login-box">+</button>
+                                <button id='disminuir' onclick="disminuir2()" class="btn btn-danger">-</button>
+                                <input type='text' id="cantidad2" value="0">
+                              </div>
+                              <br>
+                            <div class="d-flex justify-content-between align-items-center">
+                                
+                                <a href="#" class="btn btn-success">Editar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="img/principal-removebg-preview.png" width="354">
+                        <div class="card-body">
+                            <h5 class="card-title">Zapatos color cafe</h5>
+                            <p class="card-text">CLP 21,000</p>
                             <p>Cantidad Disponible: 30</p>
                             <div class="login-box">
                                 <button id='aumentar' onclick="aumentar()" class="btn btn-success login-box">+</button>
@@ -183,13 +256,11 @@
                               <br>
                             <div class="d-flex justify-content-between align-items-center">
                                 
-                                <a href="#" class="btn btn-success">Agregar</a>
+                                <a href="#" class="btn btn-success">Editar</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <dic class="col-12"><br></dic>
-                <dic class="col-12"><br></dic>
                     <div class="col-md-4">
                         <div class="card shadow-sm">
                             <img src="img/Principal_infantil.jpg" width="240">
@@ -199,9 +270,9 @@
                                 <p>Cantidad Disponible: 15</p>
                                 
                                     <div class="login-box">
-                                        <button id='aumentar' onclick="aumentar()" class="btn btn-success login-box">+</button>
-                                        <button id='disminuir' onclick="disminuir()" class="btn btn-danger">-</button>
-                                        <input type='text' id="cantidad" value="0">
+                                        <button id='aumentar' onclick="aumentar3()" class="btn btn-success login-box">+</button>
+                                        <button id='disminuir' onclick="disminuir3()" class="btn btn-danger">-</button>
+                                        <input type='text' id="cantidad3" value="0">
                                       </div>
                                       <br>
                                       
@@ -211,24 +282,24 @@
                             </div>
                         </div>
                     </div>  
-                    <br>
+                    
                     
                     <div class="col-md-4">
                         <div class="card shadow-sm">
-                            <img src="img/principal-removebg-preview.png">
+                            <img src="img/Principal_infantil2.jpg" width="180">
                             <div class="card-body">
-                                <h5 class="card-title">Zapatos color cafe</h5>
+                                <h5 class="card-title">Zapatos escolares color negro</h5>
                                 <p class="card-text">CLP 21,000</p>
                                 <p>Cantidad Disponible: 12</p>
                                 <div class="login-box">
-                                    <button id='aumentar' onclick="aumentar()" class="btn btn-success login-box">+</button>
-                                    <button id='disminuir' onclick="disminuir()" class="btn btn-danger">-</button>
-                                    <input type='text' id="cantidad" value="0">
+                                    <button id='aumentar' onclick="aumentar4()" class="btn btn-success login-box">+</button>
+                                    <button id='disminuir' onclick="disminuir4()" class="btn btn-danger">-</button>
+                                    <input type='text' id="cantidad4" value="0">
                                   </div>
                                   <br>
                                 <div class="d-flex justify-content-between align-items-center">
                                     
-                                    <a href="#" class="btn btn-success">Agregar</a>
+                                    <input  type="submit" class="btn btn-success" value="Editar">
                                 </div>
                             </div>
                         </div>
@@ -238,9 +309,12 @@
             
     
     <div class="footer buttons">
-        <h2>Acerca De Nuestra TiendaOnline</h2>
-        <p><b>Contactanos</b></p>
-        
+        <h2>El lugar para los atletas.</h2>
+        <p>Nosotros somos una tienda humilde, Consigue antes que nadie
+            acceso exclusivo a los nuevos estilos e innovaciones, envíos 
+            sin cargo y mucho más. Si aún no eres miembro, registrate, es gratis.
+        </p>
+
         
         <br>
         
