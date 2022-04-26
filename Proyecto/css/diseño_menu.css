@@ -313,24 +313,72 @@ span.psw {
 body, h1, h2, h3, h4, h5, h6  {
   font-family: Sofia, serif;
 }
-.button_re{
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
+.registrar{
+  margin: auto;
   text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  position: relative;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 }
-.button_re:hover{background-color: #3e8e41;}
-
-.button_re:active{
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+.registrar div {
+  position: absolute;
+  background-color: #333;
+  height: 100%;
+  width: 50px;
+  border-radius: 25px;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+.registrar div span{
+  display: block;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 8px;
+  height: 2px;
+  width: 0px;
+  background-color: #fff;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+.registrar div span::before{
+  display: block;
+  content: "";
+  height: 2px;
+  width: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: -3px;
+  left: 13px;
+  transform: rotate(45deg);
+}
+.registrar div span::after{
+  display: block;
+  content: "";
+  height: 2px;
+  width: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 3px;
+  left: 13px;
+  transform: rotate(-45deg);
+}
+.registrar:hover div{
+  width: 100%;
+}
+.registrar:hover div span{
+  left: 25%;
+  width: 20px;
+}
+.registrar p{
+  font-family: 'Mukta', sans-serif;
+  position: absolute;
+  top: calc(75% - 28px);
+  left: calc(50% - 13.5px);
+  z-index: 1;
+  color: #333;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+.registrar:hover p{
+  color: rgb(32, 92, 184);
 }
