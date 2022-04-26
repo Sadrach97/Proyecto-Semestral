@@ -215,7 +215,7 @@ button:hover {
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
-    background-color: #f44336;
+    background-color: #db1608;
 }
 
 /* Center the image and position the close button */
@@ -245,8 +245,9 @@ span.psw {
 
 /* The Modal (background) */
 .modal {
+  box-sizing: border-box;
   display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
+  position: absolute; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 50%;
   top: 50%;
@@ -255,7 +256,7 @@ span.psw {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
+  padding: 70px 30px;
 }
 
 /* Modal Content/Box */
@@ -311,4 +312,25 @@ span.psw {
 
 body, h1, h2, h3, h4, h5, h6  {
   font-family: Sofia, serif;
+}
+.button_re{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button_re:hover{background-color: #3e8e41;}
+
+.button_re:active{
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
