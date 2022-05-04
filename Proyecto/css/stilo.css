@@ -5,8 +5,8 @@
     font-size: 20px;
 }
 body{
-  margin: 0;
-  padding: 0;
+  
+  background-image: url(../img/fondo.jpg);
   background: url(../img/fondo.jpg) no-repeat center top;
   background-size: cover;
   font-family: sans-serif;
@@ -79,11 +79,10 @@ body{
   .login-box a:hover {
     color: #fff;
   }
-<<<<<<< Updated upstream
-  
-=======
   body, h1, h2, h3, h4, h5, h6  {
     margin: 0;
     font-family: Sofia, serif;
   }
->>>>>>> Stashed changes
+  .form {
+    font-size: 20px;
+  }
