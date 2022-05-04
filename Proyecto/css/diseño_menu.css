@@ -313,75 +313,6 @@ body, h1, h2, h3, h4, h5, h6  {
   margin: 0;
   font-family: Sofia, serif;
 }
-.registrar{
-  margin: auto;
-  text-decoration: none;
-  display: inline-block;
-  width: 200px;
-  height: 50px;
-  text-align: center;
-  position: relative;
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-}
-.registrar div {
-  position: absolute;
-  background-color: #333;
-  height: 100%;
-  width: 50px;
-  border-radius: 25px;
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-}
-.registrar div span{
-  display: block;
-  position: absolute;
-  top: calc(50% - 1px);
-  left: 8px;
-  height: 2px;
-  width: 0px;
-  background-color: #fff;
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-}
-.registrar div span::before{
-  display: block;
-  content: "";
-  height: 2px;
-  width: 10px;
-  background-color: #fff;
-  position: absolute;
-  top: -3px;
-  left: 13px;
-  transform: rotate(45deg);
-}
-.registrar div span::after{
-  display: block;
-  content: "";
-  height: 2px;
-  width: 10px;
-  background-color: #fff;
-  position: absolute;
-  top: 3px;
-  left: 13px;
-  transform: rotate(-45deg);
-}
-.registrar:hover div{
-  width: 100%;
-}
-.registrar:hover div span{
-  left: 25%;
-  width: 20px;
-}
-.registrar p{
-  font-family: 'Mukta', sans-serif;
-  position: absolute;
-  top: calc(75% - 28px);
-  left: calc(50% - 13.5px);
-  z-index: 1;
-  color: #333;
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-}
-.registrar:hover p{
-  color: rgb(32, 92, 184);
-}
 
 #footer{
   background: #2e2e2e;
@@ -438,3 +369,5 @@ body, h1, h2, h3, h4, h5, h6  {
   width: 100%;
   height: 50px;
 }
+
+

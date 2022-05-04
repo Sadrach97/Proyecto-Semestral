@@ -489,3 +489,11 @@ body, h1, h2, h3, h4, h5, h6  {
 .registrar:hover p{
   color: rgb(32, 92, 184);
 }
+
+.navbar{
+  height: 70px;
+  margin: 0;
+  top: 100%;
+  width: 100%;
+  
+}
