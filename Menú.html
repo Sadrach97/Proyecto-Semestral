@@ -65,7 +65,7 @@
                     <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                     </svg></button>
     <div id="id01" class="modal">
-    <form class="modal-content animate" action="/logeado.html">
+    <form class="modal-content animate" name="f3" action="/logeado.html">
     <div class="imgcontainer">
     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
     <img src="Proyecto/img/logo.png" class="avatar" alt="Avatar Image">
@@ -73,10 +73,10 @@
 
     <div class="container">
     <label for="uname"><b>Usuario o Correo</b></label>
-    <input type="text" placeholder="Ingresar Usuario o Correo" name="uname" required>
+    <input type="text" id="nombre2" placeholder="Ingresar Usuario o Correo" name="uname" required>
 
     <label for="psw"><b>Contraseña</b></label>
-    <input type="password" placeholder="Ingresar Contraseña" name="psw" required>
+    <input type="password" id="contra" placeholder="Ingresar Contraseña" name="psw" required>
     
     <button type="submit"><h3>Acceso</h3></button>
     <label>
@@ -259,7 +259,7 @@ window.onclick = function(event) {
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
                                 </svg>
-                                <span>REGISTRATE</span>
+                                <a href="Proyecto/Register.html"><span>REGISTRATE</span></a>
                         </button>
                     </div>
                 </div>

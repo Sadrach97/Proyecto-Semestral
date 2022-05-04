@@ -24,7 +24,7 @@ function comprobarClave(){
      
 }
 function rellenarDatos(){
-  nome = document.f2.nombre1.value = document.f1.nombre.value;
-  ape = document.f2.appate1.value = document.f1.appate.value;
+  document.f2.nombre1.value = document.f3.nombre2.value;
+  document.f2.clave11.value = document.f3.contra.value;
 }
 
